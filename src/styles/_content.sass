@@ -1,49 +1,50 @@
-.navigation
-    position: absolute
-    top: 0
-    width: 100%
-    padding: $big-gutter
-    .container
-        text-align: center
-        .menuBtn
-            float: left
-        .logo
-            font-size: 1.5rem
-    .mobileMenu
-        width: 100%
+.application
+    .navigation
         position: absolute
-        left: 0
         top: 0
-        z-index: 10
-        background: $white
+        width: 100%
         padding: $big-gutter
-        display: flex
-        justify-content: space-between
-        -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
-        animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
-        .closeBtn
-            height: 1rem
-            cursor: pointer
-        .menu
+        .container
+            text-align: center
+            .menuBtn
+                float: left
+            .logo
+                font-size: 1.5rem
+        .mobileMenu
+            width: 100%
+            position: absolute
+            left: 0
+            top: 0
+            z-index: 10
+            background: $white
+            padding: $big-gutter
             display: flex
-            .link
-                margin-left: 1rem
+            justify-content: space-between
+            -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+            animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+            .closeBtn
+                height: 1rem
+                cursor: pointer
+            .menu
+                display: flex
+                .link
+                    margin-left: 1rem
+
+    
 
 
+    @-webkit-keyframes slide-bottom
+        0%
+            -webkit-transform: translateY(-1000px)
+            transform: translateY(-1000px)
+        100%
+            -webkit-transform: translateY(0)
+            transform: translateY(0)
 
-
-@-webkit-keyframes slide-bottom
-    0%
-        -webkit-transform: translateY(-1000px)
-        transform: translateY(-1000px)
-    100%
-        -webkit-transform: translateY(0)
-        transform: translateY(0)
-
-@keyframes slide-bottom
-    0%
-        -webkit-transform: translateY(-1000px)
-        transform: translateY(-1000px)
-    100%
-        -webkit-transform: translateY(0)
-        transform: translateY(0)
+    @keyframes slide-bottom
+        0%
+            -webkit-transform: translateY(-1000px)
+            transform: translateY(-1000px)
+        100%
+            -webkit-transform: translateY(0)
+            transform: translateY(0)
