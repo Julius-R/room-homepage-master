@@ -10,6 +10,7 @@
                 float: left
             .logo
                 font-size: 1.5rem
+                color: $white
         .mobileMenu
             width: 100%
             position: absolute
@@ -18,7 +19,7 @@
             z-index: 10
             background: $white
             padding: $big-gutter
-            display: flex
+            display: none
             justify-content: space-between
             -webkit-animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
             animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
@@ -29,8 +30,30 @@
                 display: flex
                 .link
                     margin-left: 1rem
+                    color: $black
+                    font-weight: $bold
+                    padding-left: 1rem
 
-    
+    .bottomTier
+        display: grid
+        .imageHolder
+            width: 100%
+            img
+                width: 100%
+        .info
+            grid-row: 2/3
+            .container
+                padding: $big-gutter + .5rem $big-gutter
+                line-height: 1.5rem
+                h1
+                    color: $black
+                    font-size: 1.2rem
+                    letter-spacing: 2px
+                    text-transform: uppercase
+                    font-weight: $bold
+                    margin-bottom: 1rem
+                p
+                    font-size: .98rem
 
 
     @-webkit-keyframes slide-bottom

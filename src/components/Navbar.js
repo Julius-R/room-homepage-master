@@ -3,7 +3,7 @@ import hamburger from "../assets/icon-hamburger.svg";
 import close from "../assets/icon-close.svg";
 
 const log = val => console.log(val)
-const links = ["Home","Shop","About","Contact"];
+const links = ["home","shop","about","contact"];
 
 export default function Navbar() {
     const mobileMenuToggle = () => {
