@@ -7,7 +7,12 @@ export default function Gallery(props) {
         <section className="galleryArea">
             {console.log(props.slide)}
             <section className="image">
-                <img src={props.slide.srcMobile} alt="" srcset=""/>
+                <img 
+                    src={props.slide.srcDesktop} 
+                    alt="" 
+                    srcset={`${props.slide.srcMobile} 375w, ${props.slide.srcDesktop} 840w`}
+                    sizes="(max-width: 375px) 375px, 840px"
+                />
                 <section className="controller">
                     <div className="control" onClick={props.prevSlide}>
                         <img src={leftArrow} alt="Left arrow"/>
