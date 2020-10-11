@@ -1,6 +1,7 @@
 .application
     .navigation
         position: absolute
+        z-index: 5
         top: 0
         width: 100%
         padding: $big-gutter
@@ -8,9 +9,6 @@
             text-align: center
             .menuBtn
                 float: left
-            .logo
-                font-size: 1.5rem
-                color: $white
         .mobileMenu
             width: 100%
             position: absolute
@@ -33,6 +31,49 @@
                     color: $black
                     font-weight: $bold
                     padding-left: 1rem
+    
+    .galleryArea
+        .image
+            position: relative
+            .controller
+                z-index: 3
+                position: absolute
+                background: green
+                display: flex
+                bottom: 3px
+                right: 0
+                .control
+                    background: $black
+                    &:hover
+                        cursor: pointer
+                        background: $vryDrkGry
+                    img
+                       padding: $gutter $big-gutter
+                    
+        .container
+            padding: $big-gutter + .5rem $big-gutter
+            line-height: 1.5rem
+            h1
+                color: $black
+                font-size: 2rem
+                font-weight: $bold
+                line-height: 2.25rem
+            p
+                font-size: .98rem
+                margin: $gutter 0 $big-gutter
+            a
+                color: $black
+                letter-spacing: 5px
+                text-transform: uppercase
+                font-size: 1.15rem
+                .svg
+                    margin-left: $big-gutter
+                &:hover
+                    color: $drkGray
+                    .svg
+                        stroke: $drkGray
+                        fill: $drkGray
+                
 
     .bottomTier
         display: grid
